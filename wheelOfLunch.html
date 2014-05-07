@@ -1,298 +1,298 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Wheel of Lunch!</title>
-</head>
-<body>
-	<div class="container">
-		<form action="">
-			<input type="text" placeholder="Location">
-			<input type="submit" value="Get me food!">
-		</form>
-		<div class="wheelWrapper">
-			<div class="triangle"></div>
-			<div class="wheel">
-				<div class="option option1 single"><div class="slice"><p>1</p></div></div>
-				<div class="option option2 single"><div class="slice"><p>2</p></div></div>
-				<div class="option option3 single"><div class="slice"><p>3</p></div></div>
-				<div class="option option4 single"><div class="slice"><p>4</p></div></div>
-				<div class="option option5 single"><div class="slice"><p>5</p></div></div>
-				<div class="option option6 single"><div class="slice"><p>6</p></div></div>
-				<div class="option option7 single"><div class="slice"><p>7</p></div></div>
-				<div class="option option8 single"><div class="slice"><p>8</p></div></div>
-				<div class="option option9 single"><div class="slice"><p>9</p></div></div>
-				<div class="option option10 double"><div class="slice"><p>10</p></div></div>
-				<div class="option option11 double"><div class="slice"><p>11</p></div></div>
-				<div class="option option12 double"><div class="slice"><p>12</p></div></div>
-				<div class="option option13 double"><div class="slice"><p>13</p></div></div>
-				<div class="option option14 double"><div class="slice"><p>14</p></div></div>
-				<div class="option option15 double"><div class="slice"><p>15</p></div></div>
-				<div class="option option16 double"><div class="slice"><p>16</p></div></div>
-				<div class="option option17 double"><div class="slice"><p>17</p></div></div>
-				<div class="option option18 double"><div class="slice"><p>18</p></div></div>
-				<div class="option option19 double"><div class="slice"><p>19</p></div></div>
-				<div class="option option20 double"><div class="slice"><p>20</p></div></div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Wheel of Lunch!</title>
+	</head>
+	<body>
+		<div class="container">
+			<form action="">
+				<input type="text" placeholder="Location">
+				<input type="submit" value="Get me food!">
+			</form>
+			<div class="wheelWrapper">
+				<div class="triangle"></div>
+				<div class="wheel">
+					<div class="option option1 single"><div class="slice"><p>1</p></div></div>
+					<div class="option option2 single"><div class="slice"><p>2</p></div></div>
+					<div class="option option3 single"><div class="slice"><p>3</p></div></div>
+					<div class="option option4 single"><div class="slice"><p>4</p></div></div>
+					<div class="option option5 single"><div class="slice"><p>5</p></div></div>
+					<div class="option option6 single"><div class="slice"><p>6</p></div></div>
+					<div class="option option7 single"><div class="slice"><p>7</p></div></div>
+					<div class="option option8 single"><div class="slice"><p>8</p></div></div>
+					<div class="option option9 single"><div class="slice"><p>9</p></div></div>
+					<div class="option option10 double"><div class="slice"><p>10</p></div></div>
+					<div class="option option11 double"><div class="slice"><p>11</p></div></div>
+					<div class="option option12 double"><div class="slice"><p>12</p></div></div>
+					<div class="option option13 double"><div class="slice"><p>13</p></div></div>
+					<div class="option option14 double"><div class="slice"><p>14</p></div></div>
+					<div class="option option15 double"><div class="slice"><p>15</p></div></div>
+					<div class="option option16 double"><div class="slice"><p>16</p></div></div>
+					<div class="option option17 double"><div class="slice"><p>17</p></div></div>
+					<div class="option option18 double"><div class="slice"><p>18</p></div></div>
+					<div class="option option19 double"><div class="slice"><p>19</p></div></div>
+					<div class="option option20 double"><div class="slice"><p>20</p></div></div>
+				</div>
 			</div>
+			<h1 class="youShouldGo"></h1>
+			<h2 class="other"></h2>
+			<ol class="lunchSpots"></ol>
 		</div>
-		<h1 class="youShouldGo"></h1>
-		<h2 class="other"></h2>
-		<ol class="lunchSpots"></ol>
-	</div>
-<style>
-	ol.lunchSpots {
-		float: left;
-	}
-	.wheel {
-		height: 700px;
-		width: 700px;
-		border-radius: 50%;
-		background: red;
-		box-shadow: 0 0 10px rgba(0,0,0,0.3);
-		float: left;
-		transition: -webkit-transform 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-	}
-	.wheelWrapper {
-		position: relative;
-		width: 700px;
-		padding-top: 60px;
-	}
-	.triangle {
-		width: 0;
-		height: 0;
-		border-left: 25px solid transparent;
-		border-right: 25px solid transparent;
-		border-top: 80px solid red;
-		position: absolute;
-		left: 50%;
-		margin-left: -25px;
-		top: 0;
-		z-index: 5;
-	}
+		<style>
+			ol.lunchSpots {
+				float: left;
+			}
+			.wheel {
+				height: 700px;
+				width: 700px;
+				border-radius: 50%;
+				background: red;
+				box-shadow: 0 0 10px rgba(0,0,0,0.3);
+				float: left;
+				transition: -webkit-transform 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+			.wheelWrapper {
+				position: relative;
+				width: 700px;
+				padding-top: 60px;
+			}
+			.triangle {
+				width: 0;
+				height: 0;
+				border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				border-top: 80px solid red;
+				position: absolute;
+				left: 50%;
+				margin-left: -25px;
+				top: 0;
+				z-index: 5;
+			}
 
-/*	.spin {
-		-webkit-animation: spin 1s;
-	}*/
-	/*.animate {
-		transition: -webkit-transform 4s;
-	}*/
-	.slice p {
-		position: absolute;
-		font-size: 50px;
-		color: white;
-		margin: 0;
-		top: 10px;
-		left: 380px;
-		-webkit-transform: rotate(9deg);
-	}
-	.single p {
-		top: 10px;
-		left: 385px;
-	}
-	.double p {
-		top: 10px;
-		left: 375px;
-	}
-	.option .slice {
-		clip: rect(0px, 700px, 700px, 350px);
-		height: 700px;
-		width: 700px;
-		border-radius: 50%;
-		position: absolute;
-	}
-	.option {
-		position: absolute;
-		clip: rect(0px 700px 700px 350px);
-		height: 700px;
-		width: 700px;
-		border-radius: 50%;
-	}
-	.option1 .slice {
-		background: #1abc9c; /*turquoise*/
-	}
-	.option2 .slice {
-		-webkit-transform: rotate(18deg);
-		background: #27ae60; /*nephritis*/
-	}
-	.option3 .slice {
-		-webkit-transform: rotate(36deg);
-		background: #d35400; /*pumpkin*/
-	}
-	.option4 .slice {
-		-webkit-transform: rotate(54deg);
-		background: #f1c40f; /*sun flower*/
-	}
-	.option5 .slice {
-		-webkit-transform: rotate(72deg);
-		background: #1abc9c; /*turquoise*/
-	}
-	.option6 .slice {
-		-webkit-transform: rotate(90deg);
-		background: #d35400; /*pumpkin*/
-	}
-	.option7 .slice {
-		-webkit-transform: rotate(108deg);
-		background: #f1c40f; /*sun flower*/
-	}
-	.option8 .slice {
-		-webkit-transform: rotate(126deg);
-		background: #27ae60; /*nephritis*/
-	}
-	.option9 .slice {
-		-webkit-transform: rotate(144deg);
-		background: #1abc9c; /*turquoise*/
-	}
-	.option10 .slice {
-		-webkit-transform: rotate(162deg);
-		background: #d35400; /*pumpkin*/
-	}
-	.option11 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option11 .slice {
-		background: #27ae60; /*nephritis*/
-	}
-	.option12 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option12 .slice {
-		-webkit-transform: rotate(18deg);
-		background: #d35400; /*pumpkin*/
-	}
-	.option13 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option13 .slice {
-		-webkit-transform: rotate(36deg);
-		background: #f1c40f; /*sun flower*/
-	}
-	.option14 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option14 .slice {
-		-webkit-transform: rotate(54deg);
-		background: #1abc9c; /*turquoise*/
-	}
-	.option15 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option15 .slice {
-		-webkit-transform: rotate(72deg);
-		background: #f1c40f; /*sun flower*/
-	}
-	.option16 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option16 .slice {
-		-webkit-transform: rotate(90deg);
-		background: #27ae60; /*nephritis*/
-	}
-	.option17 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option17 .slice {
-		-webkit-transform: rotate(108deg);
-		background: #d35400; /*pumpkin*/
-	}
-	.option18 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option18 .slice {
-		-webkit-transform: rotate(126deg);
-		background: #27ae60; /*nephritis*/
-	}
-	.option19 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option19 .slice {
-		-webkit-transform: rotate(144deg);
-		background: #1abc9c; /*turquoise*/
-	}
-	.option20 {
-		-webkit-transform: rotate(180deg);
-	}
-	.option20 .slice {
-		-webkit-transform: rotate(162deg);
-		background: #f1c40f; /*sun flower*/
-	}
+		/*	.spin {
+				-webkit-animation: spin 1s;
+			}*/
+			/*.animate {
+				transition: -webkit-transform 4s;
+			}*/
+			.slice p {
+				position: absolute;
+				font-size: 50px;
+				color: white;
+				margin: 0;
+				top: 10px;
+				left: 380px;
+				-webkit-transform: rotate(9deg);
+			}
+			.single p {
+				top: 10px;
+				left: 385px;
+			}
+			.double p {
+				top: 10px;
+				left: 375px;
+			}
+			.option .slice {
+				clip: rect(0px, 700px, 700px, 350px);
+				height: 700px;
+				width: 700px;
+				border-radius: 50%;
+				position: absolute;
+			}
+			.option {
+				position: absolute;
+				clip: rect(0px 700px 700px 350px);
+				height: 700px;
+				width: 700px;
+				border-radius: 50%;
+			}
+			.option1 .slice {
+				background: #1abc9c; /*turquoise*/
+			}
+			.option2 .slice {
+				-webkit-transform: rotate(18deg);
+				background: #27ae60; /*nephritis*/
+			}
+			.option3 .slice {
+				-webkit-transform: rotate(36deg);
+				background: #d35400; /*pumpkin*/
+			}
+			.option4 .slice {
+				-webkit-transform: rotate(54deg);
+				background: #f1c40f; /*sun flower*/
+			}
+			.option5 .slice {
+				-webkit-transform: rotate(72deg);
+				background: #1abc9c; /*turquoise*/
+			}
+			.option6 .slice {
+				-webkit-transform: rotate(90deg);
+				background: #d35400; /*pumpkin*/
+			}
+			.option7 .slice {
+				-webkit-transform: rotate(108deg);
+				background: #f1c40f; /*sun flower*/
+			}
+			.option8 .slice {
+				-webkit-transform: rotate(126deg);
+				background: #27ae60; /*nephritis*/
+			}
+			.option9 .slice {
+				-webkit-transform: rotate(144deg);
+				background: #1abc9c; /*turquoise*/
+			}
+			.option10 .slice {
+				-webkit-transform: rotate(162deg);
+				background: #d35400; /*pumpkin*/
+			}
+			.option11 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option11 .slice {
+				background: #27ae60; /*nephritis*/
+			}
+			.option12 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option12 .slice {
+				-webkit-transform: rotate(18deg);
+				background: #d35400; /*pumpkin*/
+			}
+			.option13 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option13 .slice {
+				-webkit-transform: rotate(36deg);
+				background: #f1c40f; /*sun flower*/
+			}
+			.option14 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option14 .slice {
+				-webkit-transform: rotate(54deg);
+				background: #1abc9c; /*turquoise*/
+			}
+			.option15 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option15 .slice {
+				-webkit-transform: rotate(72deg);
+				background: #f1c40f; /*sun flower*/
+			}
+			.option16 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option16 .slice {
+				-webkit-transform: rotate(90deg);
+				background: #27ae60; /*nephritis*/
+			}
+			.option17 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option17 .slice {
+				-webkit-transform: rotate(108deg);
+				background: #d35400; /*pumpkin*/
+			}
+			.option18 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option18 .slice {
+				-webkit-transform: rotate(126deg);
+				background: #27ae60; /*nephritis*/
+			}
+			.option19 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option19 .slice {
+				-webkit-transform: rotate(144deg);
+				background: #1abc9c; /*turquoise*/
+			}
+			.option20 {
+				-webkit-transform: rotate(180deg);
+			}
+			.option20 .slice {
+				-webkit-transform: rotate(162deg);
+				background: #f1c40f; /*sun flower*/
+			}
 
-/*	@-webkit-keyframes spin {
-	    0% {
-	        -webkit-transform: rotate(0deg);
-	    }
-	    100% {
-	    	-webkit-transform: rotate(1080deg);
-	    }
-	}*/
-</style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
+		/*	@-webkit-keyframes spin {
+			    0% {
+			        -webkit-transform: rotate(0deg);
+			    }
+			    100% {
+			    	-webkit-transform: rotate(1080deg);
+			    }
+			}*/
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
 
-var app = [];
+		var app = [];
 
-app.spinPosition = 0;
+		app.spinPosition = 0;
 
-app.resetTheWheel = function() {
-	var css = '-webkit-transform: rotate(0deg);';
-	$('.wheel').attr('style', css);
-	app.spinTheWheel(app.chosenNumber*18 + 9);
-}
-
-app.spinTheWheel = function(degrees) {
-	app.spinPosition = degrees;
-    // var degrees = degrees + 1080;
-    var css = '-webkit-transform: rotate(-' + degrees + 'deg);';
-    // $('.wheel').attr('style', '-webkit-transform: rotate(0deg);');
-    window.setTimeout(function() {
-    	$('.wheel').attr('style', css);
-    },1); // waits 1ms to add the class
-    // var wheel = $('.wheel');
-    // wheel.removeClass('spin');
-    // window.setTimeout(function() {
-    // 	wheel.addClass('spin');
-    // },1); // waits 1ms to add the class
-};
-
-app.classmates = ["Wes", "Brenna", "Christina", "Dara", "Jared", "Heather", "Alex", "Alison", "Gab", "Elizabeth", "Fiona", "Kate", "Nathan", "Habib", "Lyman", "Daniel", "Patricia", "Mandy", "Christopher", "Emma", "Hannah", "Jana", "Jessica Duarte", "Jessica Marshall", "Jenn", "Tony", "Danielle", "Sharon", "Robyn", "Evelyn", "Lindsay", "Amy"];
-
-app.displaySpots = function(spots) {
-	$('ol.lunchSpots li').remove();
-	for (var i = 0; i < spots.businesses.length; i++) {
-		var lunchSpot = $('<li>').text(spots.businesses[i].name);
-		//grab the existing fieldset and get the html for it
-		$('ol.lunchSpots').append(lunchSpot);
-	}
-	app.chosenNumber = Math.floor(Math.random()*20);
-	app.recommended = spots.businesses[app.chosenNumber].name;
-	var classmate1 = app.classmates[Math.floor(Math.random()*app.classmates.length)];
-	var classmate2 = app.classmates[Math.floor(Math.random()*app.classmates.length)];
-	$('h1.youShouldGo').text('You should go to ' + app.recommended + ' with ' + classmate1 + ' and ' + classmate2 + '!');
-	$('h2.other').text('Other options:');
-	app.resetTheWheel(app.spinPosition);
-};
-
-app.getlunchSpots = function(postal) {
-	var lunchURL = 'http://localhost:8888/0208-LunchWheel/yelp.php';
-	$.ajax(lunchURL, {
-		type : 'GET',
-		dataType : 'json',
-		data : {
-			postal : postal
-		},
-		success : function(spots) {
-			app.displaySpots(spots)
+		app.resetTheWheel = function() {
+			var css = '-webkit-transform: rotate(0deg);';
+			$('.wheel').attr('style', css);
+			app.spinTheWheel(app.chosenNumber*18 + 9);
 		}
-	}); //end config ajax
-};
 
-$(function() {
-	$('input[type=submit]').on('click', function(e){
-		e.preventDefault();
-		app.postal = $('input[type=text').val();
-		app.getlunchSpots(app.postal);
-	});
-});
+		app.spinTheWheel = function(degrees) {
+			app.spinPosition = degrees;
+		    // var degrees = degrees + 1080;
+		    var css = '-webkit-transform: rotate(-' + degrees + 'deg);';
+		    // $('.wheel').attr('style', '-webkit-transform: rotate(0deg);');
+		    window.setTimeout(function() {
+		    	$('.wheel').attr('style', css);
+		    },1); // waits 1ms to add the class
+		    // var wheel = $('.wheel');
+		    // wheel.removeClass('spin');
+		    // window.setTimeout(function() {
+		    // 	wheel.addClass('spin');
+		    // },1); // waits 1ms to add the class
+		};
 
-</script>
-</body>
+		// app.classmates = ["Wes", "Brenna", "Christina", "Dara", "Jared", "Heather", "Alex", "Alison", "Gab", "Elizabeth", "Fiona", "Kate", "Nathan", "Habib", "Lyman", "Daniel", "Patricia", "Mandy", "Christopher", "Emma", "Hannah", "Jana", "Jessica Duarte", "Jessica Marshall", "Jenn", "Tony", "Danielle", "Sharon", "Robyn", "Evelyn", "Lindsay", "Amy"];
+
+		app.displaySpots = function(spots) {
+			$('ol.lunchSpots li').remove();
+			for (var i = 0; i < spots.businesses.length; i++) {
+				var lunchSpot = $('<li>').text(spots.businesses[i].name);
+				//grab the existing fieldset and get the html for it
+				$('ol.lunchSpots').append(lunchSpot);
+			}
+			app.chosenNumber = Math.floor(Math.random()*20);
+			app.recommended = spots.businesses[app.chosenNumber].name;
+			var classmate1 = app.classmates[Math.floor(Math.random()*app.classmates.length)];
+			var classmate2 = app.classmates[Math.floor(Math.random()*app.classmates.length)];
+			$('h1.youShouldGo').text('You should go to ' + app.recommended + ' with ' + classmate1 + ' and ' + classmate2 + '!');
+			$('h2.other').text('Other options:');
+			app.resetTheWheel(app.spinPosition);
+		};
+
+		app.getlunchSpots = function(postal) {
+			var lunchURL = 'http://localhost:8888/0208-LunchWheel/yelp.php';
+			$.ajax(lunchURL, {
+				type : 'GET',
+				dataType : 'json',
+				data : {
+					postal : postal
+				},
+				success : function(spots) {
+					app.displaySpots(spots)
+				}
+			}); //end config ajax
+		};
+
+		$(function() {
+			$('input[type=submit]').on('click', function(e){
+				e.preventDefault();
+				app.postal = $('input[type=text').val();
+				app.getlunchSpots(app.postal);
+			});
+		});
+
+		</script>
+	</body>
 </html>
